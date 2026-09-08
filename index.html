@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ocean Pearl Beach Resort</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+        <nav class="navbar">
+
+            <!-- Hotel Logo / Name -->
+            <div class="logo">
+                <a href="#home">
+                    <img src="logo1.png" alt="Ocean Pearl Resort Logo">
+                </a>
+                <!-- <h1>Ocean Pearl Resort</h1> -->
+            </div>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+
+                <li>
+                    <a href="#home">
+                        <i class="fa-solid fa-house"></i>
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#rooms">
+                        <i class="fa-solid fa-bed"></i>
+                        Rooms
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#gallery">
+                        <i class="fa-solid fa-images"></i>
+                        Gallery
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#facilities">
+                        <i class="fa-solid fa-hotel"></i>
+                        Facilities
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#booking">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        Booking
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact">
+                        <i class="fa-solid fa-phone"></i>
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- ================= WELCOME SECTION ================= -->
+    <section id="home" class="welcome">
+
+        <div class="welcome-content">
+            <h2>Welcome to Ocean Pearl Resort</h2>
+
+            <p>
+                Experience luxury, comfort and unforgettable moments
+                by the beautiful ocean.
+            </p>
+
+            <a href="#booking" class="btn">Book Your Stay</a>
+        </div>
+
+    </section>
+
+
+    <!-- ================= ROOMS SECTION ================= -->
+    <section id="rooms" class="rooms">
+
+        <div class="section-title">
+            <h2>Our Luxury Rooms</h2>
+
+            <p>
+                Choose from our beautifully designed rooms and suites
+                for the perfect stay.
+            </p>
+        </div>
+
+
+        <div class="room-container">
+
+            <!-- Standard Room -->
+            <div class="room-card">
+
+                <img src="standardroom1.jpg" alt="Standard Room">
+
+                <div class="room-info">
+
+                    <h3>Standard Room</h3>
+
+                    <p class="price">
+                        KSh 8,000 per night
+                    </p>
+
+                    <p>
+                        A comfortable and elegant room perfect for
+                        solo travellers or couples.
+                    </p>
+
+                    <button onclick="bookRoom('Standard Room')">
+                        Book Now
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Deluxe Room -->
+            <div class="room-card">
+
+                <img src="deluxe1.jpg" alt="Deluxe Room">
+
+                <div class="room-info">
+
+                    <h3>Deluxe Room</h3>
+
+                    <p class="price">
+                        KSh 12,000 per night
+                    </p>
+
+                    <p>
+                        Enjoy extra space, beautiful ocean views
+                        and premium comfort.
+                    </p>
+
+                    <button onclick="bookRoom('Deluxe Room')">
+                        Book Now
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Family Suite -->
+            <div class="room-card">
+
+                <img src="family2.jpg" alt="Family Suite">
+
+                <div class="room-info">
+
+                    <h3>Family Suite</h3>
+
+                    <p class="price">
+                        KSh 18,000 per night
+                    </p>
+
+                    <p>
+                        A spacious suite designed for families,
+                        with plenty of room to relax.
+                    </p>
+
+                    <button onclick="bookRoom('Family Suite')">
+                        Book Now
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Presidential Suite -->
+            <div class="room-card">
+
+                <img src="presidential one.jpg" alt="Presidential Suite">
+
+                <div class="room-info">
+
+                    <h3>Presidential Suite</h3>
+
+                    <p class="price">
+                        KSh 35,000 per night
+                    </p>
+
+                    <p>
+                        Experience the ultimate luxury with a
+                        private lounge, premium furnishings and
+                        breathtaking ocean views.
+                    </p>
+
+                    <button onclick="bookRoom('Presidential Suite')">
+                        Book Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= GALLERY SECTION ================= -->
+    <section id="gallery" class="gallery">
+
+        <div class="section-title">
+
+            <h2>Hotel Gallery</h2>
+
+            <p>
+                Explore the beauty and luxury of Ocean Pearl Resort.
+            </p>
+
+        </div>
+
+
+        <!-- Carousel -->
+        <div class="carousel">
+
+            <button class="carousel-btn prev" onclick="previousSlide()">
+                &#10094;
+            </button>
+
+
+            <div class="carousel-images">
+
+                <img src="images/pool.jpg" alt="Swimming Pool" class="slide">
+
+                <img src="images/hotel-room.jpg" alt="Hotel Room" class="slide">
+
+                <img src="images/restaurant.jpg" alt="Restaurant" class="slide">
+
+                <img src="images/beach.jpg" alt="Beach" class="slide">
+
+                <img src="images/reception.jpg" alt="Hotel Reception" class="slide">
+
+            </div>
+
+
+            <button class="carousel-btn next" onclick="nextSlide()">
+                &#10095;
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FACILITIES SECTION ================= -->
+
+    <section id="facilities" class="facilities">
+
+        <div class="section-title">
+
+            <h2>Our Facilities</h2>
+
+            <p>
+                Enjoy world-class facilities designed to make your stay
+                comfortable, relaxing and memorable.
+            </p>
+
+        </div>
+
+
+        <div class="facility-container">
+
+            <!-- Swimming Pool -->
+            <div class="facility-card">
+
+                <i class="fa-solid fa-person-swimming"></i>
+
+                <h3>Swimming Pool</h3>
+
+                <p>
+                    Take a refreshing swim and relax by our beautiful
+                    outdoor infinity swimming pool.
+                </p>
+
+            </div>
+
+
+            <!-- Restaurant -->
+            <div class="facility-card">
+
+                <i class="fa-solid fa-utensils"></i>
+
+                <h3>Restaurant</h3>
+
+                <p>
+                    Enjoy delicious local and international cuisine
+                    prepared by our professional chefs.
+                </p>
+
+            </div>
+
+
+            <!-- Private Beach -->
+            <div class="facility-card">
+
+                <i class="fa-solid fa-umbrella-beach"></i>
+
+                <h3>Private Beach</h3>
+
+                <p>
+                    Relax on our beautiful private beach and enjoy
+                    breathtaking ocean views.
+                </p>
+
+            </div>
+
+
+            <!-- Spa -->
+            <div class="facility-card">
+
+                <i class="fa-solid fa-spa"></i>
+
+                <h3>Spa & Wellness</h3>
+
+                <p>
+                    Rejuvenate your body and mind with our relaxing
+                    spa and wellness services.
+                </p>
+
+            </div>
+
+
+            <!-- Wi-Fi -->
+            <div class="facility-card">
+
+                <i class="fa-solid fa-wifi"></i>
+
+                <h3>Free Wi-Fi</h3>
+
+                <p>
+                    Stay connected with complimentary high-speed
+                    Wi-Fi throughout the resort.
+                </p>
+
+            </div>
+
+
+            <!-- Parking -->
+            <div class="facility-card">
+
+                <i class="fa-solid fa-square-parking"></i>
+
+                <h3>Free Parking</h3>
+
+                <p>
+                    Enjoy safe, secure and convenient parking
+                    throughout your stay.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= BOOKING SECTION ================= -->
+    <section id="booking" class="booking">
+
+        <div class="section-title">
+
+            <h2>Book Your Stay</h2>
+
+            <p>
+                Select your preferred room and enjoy a luxurious
+                experience at Ocean Pearl Resort.
+            </p>
+
+        </div>
+
+
+        <!-- Booking Form -->
+        <form id="bookingForm">
+
+            <label for="guestName">Full Name</label>
+
+            <input type="text" id="guestName" name="guestName" placeholder="Enter your full name" required>
+
+
+            <label for="email">Email Address</label>
+
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+
+            <label for="room">Select Room</label>
+
+            <select id="room" name="room" required>
+
+                <option value="">
+                    -- Select a Room --
+                </option>
+
+                <option value="Standard Room">
+                    Standard Room
+                </option>
+
+                <option value="Deluxe Room">
+                    Deluxe Room
+                </option>
+
+                <option value="Family Suite">
+                    Family Suite
+                </option>
+
+                <option value="Presidential Suite">
+                    Presidential Suite
+                </option>
+
+            </select>
+
+
+            <label for="checkin">
+                Check-in Date
+            </label>
+
+            <input type="date" id="checkin" name="checkin" required>
+
+
+            <label for="checkout">
+                Check-out Date
+            </label>
+
+            <input type="date" id="checkout" name="checkout" required>
+
+
+            <label for="guests">
+                Number of Guests
+            </label>
+
+            <input type="number" id="guests" name="guests" min="1" placeholder="Number of guests" required>
+
+
+            <button type="submit">
+                Confirm Booking
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- ================= ROOM PRICE TABLE ================= -->
+    <section class="room-table">
+
+        <div class="section-title">
+
+            <h2>Room Rates</h2>
+
+        </div>
+
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Room</th>
+                    <th>Capacity</th>
+                    <th>Price Per Night</th>
+                    <th>Action</th>
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+                    <td>Standard Room</td>
+                    <td>2 Guests</td>
+                    <td>KSh 8,000</td>
+                    <td>
+                        <button onclick="bookRoom('Standard Room')">
+                            Book Now
+                        </button>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>Deluxe Room</td>
+                    <td>2 Guests</td>
+                    <td>KSh 12,000</td>
+                    <td>
+                        <button onclick="bookRoom('Deluxe Room')">
+                            Book Now
+                        </button>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>Family Suite</td>
+                    <td>4 Guests</td>
+                    <td>KSh 18,000</td>
+                    <td>
+                        <button onclick="bookRoom('Family Suite')">
+                            Book Now
+                        </button>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>Presidential Suite</td>
+                    <td>6 Guests</td>
+                    <td>KSh 35,000</td>
+                    <td>
+                        <button onclick="bookRoom('Presidential Suite')">
+                            Book Now
+                        </button>
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer id="contact">
+
+        <div class="footer-content">
+
+            <h2>Ocean Pearl Resort</h2>
+
+            <p>
+                Your luxury escape by the ocean.
+            </p>
+
+            <p>
+                📍 Mombasa, Kenya
+            </p>
+
+            <p>
+                📞 +254 700 123 456
+            </p>
+
+            <p>
+                ✉️ info@oceanpearlresort.com
+            </p>
+
+        </div>
+
+
+        <div class="copyright">
+
+            <p>
+                &copy; 2026 Ocean Pearl Resort.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
